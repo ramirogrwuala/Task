@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+</head>
+<body>
+<main>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <a href="#home"><img src="/img/logo-header.svg" alt="Your Company Logo" class="logo-desktop"></a>
+                <a href="#home"></a><img src="/img/logo-header.svg" alt="Your Company Logo" class="logo-mobile"></a>
+            </div>
+            <div class="mobile-menu">
+                <img src="/img/burger-menu.svg" alt="Mobile menu" id="menu-icon">
+                <ul class="mobile-menu-list" id="mobile-menu-list">
+                    <img src="/img/close-icon.svg" alt="Close menu" id="close-icon" height="20px">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#book">Book Online</a></li>
+                    <li><a href="#weightloss">Weight Loss Programs</a></li>
+                    <li><a href="#realstories">Real Patient Stories</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#subscription">Subscription</a></li>
+                </ul>
+            </div>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#book">Book Online</a></li>
+                    <li><a href="#weightloss">Weight Loss Programs</a></li>
+                    <li><a href="#realstories">Real Patient Stories</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#subscription">Subscription</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h>Chicago's <span>Free</span> Medical Check-Up and Weight Loss Consultation</h>
+                </div>
+                <div class="countdown-container">
+                    <p>Your offer ends in:</p>
+                    <div id="countdown">
+                      <div class="time-section">
+                        <span>DAYS</span>
+                        <span class="countdown-item" id="days">00</span>
+                      </div>
+                      <div class="time-section">
+                        <span>HOURS</span>
+                        <span class="countdown-item" id="hours">00</span>
+                      </div>
+                      <div class="time-section">
+                        <span>MINUTES</span>
+                        <span class="countdown-item" id="minutes">00</span>
+                      </div>
+                      <div class="time-section">
+                        <span>SECONDS</span>
+                        <span class="countdown-item" id="seconds">00</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-question" onclick="toggleFAQ('faq1')">Why is it free? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer" id="faq1">Placeholder text for Answer 1</div>
+                <div class="faq-question" onclick="toggleFAQ('faq2')">How long does it take?</div>
+                <div class="faq-answer" id="faq2">Placeholder text for Answer 2</div>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

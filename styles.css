@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:#333333;
+    
+}
+
+main{
+    background-image: linear-gradient(to left, #FFD900 50%, transparent 50%);
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-desktop {
+    width: 138px;
+    height: 62px;
+    margin-right: 35px;
+}
+
+.logo-mobile {
+    display: none;
+    width: 88px;
+    height: 40px;
+}
+
+.desktop-menu {
+    display: flex;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+.desktop-menu li {
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.mobile-menu {
+    display: none;
+    align-items: center;
+}
+
+#menu-icon{
+    width: 3rem;
+    height: 2rem;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(26%) saturate(2645%) hue-rotate(278deg) brightness(90%) contrast(91%);
+}
+
+.mobile-menu img {
+    cursor: pointer;
+    padding: 15px;
+    align-self: self-end;
+}
+
+.mobile-menu-list {
+    list-style: none;
+    padding: 12px;
+    border-radius: 0px 0px 0px 20px;
+    margin:0;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #DD71C6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;  
+    font-size: 15px;
+    font-weight: 600;  
+    box-shadow: 1px 10px 16px -3px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px 10px 16px -3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px 10px 16px -3px rgba(0,0,0,0.48);
+}
+
+.mobile-menu-list.show {
+    display: flex;
+    gap: 10px;
+    transition: transform 1s ease-in-out 1s;
+    z-index: 9;
+}
+
+.mobile-menu-list li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu-list li a{
+    text-decoration: none;
+    color:white;
+}
+
+.hero-section{
+    display: flex;
+    margin: auto;
+}
+.hero-text, .faq-section h2{
+    font-family: Libre Bakersville;
+    font-weight: 500;
+}
+.faq-section h2{
+    font-size:30px;
+    line-height: 38.4px;
+}
+.hero-text span{
+    color:#DD71C6;
+}
+
+.countdown-container {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    width: 281px;
+    height: 159px;
+    background-color: #FFFFFF82;
+    box-shadow: 0px 4px 40px 0px #0000001A;
+    border-radius: 30px;
+    backdrop-filter: blur(10px)
+  }
+
+  .countdown-container p{
+    padding: 15px;
+    font-size: 0.8em;
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .time-section {
+    margin: 0 10px;
+    color:#4c4b43 ;
+  }
+  
+  .time-section span {
+    font-size: 0.6em;
+    color: #2090c9;
+    letter-spacing: 2px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+  }
+
+  .time-section .countdown-item{
+    color: #333333;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .faq-section{
+        width: 75%;
+        margin: 20px auto;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.show {
+    display: block;
+    max-height: 500px; /* Set a value higher than the expected height of your answer content */
+}
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 1320px;
+        margin: auto;
+    }
+    header{
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+    }
+    .hero-section{
+        flex-direction: column;
+        width: 281px;
+    }
+    .hero-text{
+        text-align: center;
+        font-size: 38px;
+        line-height: 47px;
+        font-weight: 400;
+    }
+    
+}
